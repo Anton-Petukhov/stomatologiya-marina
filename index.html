@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стоматология Марина — современная премиальная клиника в Москве</title>
+  <meta name="description" content="Стоматология Марина: цифровая диагностика, имплантация, виниры и ортодонтия без спешки. Москва." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .toast {
+      position: fixed; left: 50%; bottom: 28px; transform: translate(-50%, 20px);
+      background: #16140f; color: #fffaf3; padding: 14px 20px; border-radius: 999px;
+      font-size: 14px; opacity: 0; pointer-events: none; transition: .35s; z-index: 80;
+      max-width: min(520px, calc(100% - 32px)); text-align: center;
+    }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="Стоматология Марина">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 4c3.2 5.2 8.8 9.4 12 14.2C24.6 24.6 20.2 28 16 28s-8.6-3.4-12-9.8C7.2 13.4 12.8 9.2 16 4Z" stroke="#B08A3E" stroke-width="1.4"/>
+          <path d="M16 10.5c1.6 2.4 4.2 4.4 5.8 6.7-1.8 3-3.8 4.8-5.8 4.8s-4-1.8-5.8-4.8c1.6-2.3 4.2-4.3 5.8-6.7Z" fill="#B08A3E"/>
+        </svg>
+        МАРИНА
+      </a>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#approach">Подход</a>
+        <a href="#team">Врачи</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <div class="header-actions">
+        <a class="phone" href="tel:+74951234567">+7 495 123-45-67</a>
+        <a class="btn" href="#book">Записаться</a>
+        <button class="burger" aria-label="Меню"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="#services">Услуги</a>
+    <a href="#approach">Подход</a>
+    <a href="#team">Врачи</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#book">Запись на консультацию</a>
+    <a href="tel:+74951234567">+7 495 123-45-67</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media">
+        <img src="img/reception.jpg" alt="Ресепшн стоматологии Марина" />
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Москва · Патриаршие</p>
+        <h1 class="reveal d1">Светлая<br>стоматология<br>нового ритма</h1>
+        <p class="lead reveal d2">Цифровые протоколы, тихие кабинеты и врачи, которые сначала слушают. Лечение без спешки — и без ощущения конвейера.</p>
+        <div class="hero-row reveal d3">
+          <a class="btn btn-gold" href="#book">Первичная консультация</a>
+          <a class="btn btn-ghost" href="#services" style="border-color: rgba(255,255,255,.25); color:#fff;">Смотреть направления</a>
+        </div>
+        <div class="hero-meta reveal d3">
+          <span>Пн–Сб 09:00–21:00</span>
+          <span>Парковка для гостей</span>
+          <span>Седация по показаниям</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="stats">
+          <div class="stat"><b>12</b><span>лет собираем команду, а не франшизу</span></div>
+          <div class="stat"><b>3D</b><span>сканирование вместо слепков почти во всех случаях</span></div>
+          <div class="stat"><b>48 ч</b><span>на цифровой план лечения после консультации</span></div>
+          <div class="stat"><b>0</b><span>скрытых доплат после согласованного плана</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" style="color:var(--gold)">Направления</p>
+          <h2>То, что делаем каждый день — и делаем спокойно</h2>
+          <p>Не «всё сразу и дёшево». Шесть направлений, в которых клиника держит уровень премиального европейского протокола.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service"><span class="service-num">01</span><h3>Эстетика улыбки</h3><p>Виниры E-max, реставрации и цифровое моделирование. Сначала смотрим лицо и прикус, потом цвет.</p><span class="more">от 45 000 ₽ / зуб</span></article>
+          <article class="service"><span class="service-num">02</span><h3>Имплантация</h3><p>Nobel и Straumann. Навигационная хирургия, немедленная нагрузка там, где это безопасно.</p><span class="more">от 89 000 ₽</span></article>
+          <article class="service"><span class="service-num">03</span><h3>Ортодонтия</h3><p>Элайнеры и брекет-системы. План строится на КЛКТ, а не на «примерно выровняем».</p><span class="more">от 180 000 ₽</span></article>
+          <article class="service"><span class="service-num">04</span><h3>Цифровая диагностика</h3><p>Интраоральный сканер, КЛКТ, фотопротокол. Вы уходите с понятной картиной, а не с догадками.</p><span class="more">консультация 0 ₽*</span></article>
+          <article class="service"><span class="service-num">05</span><h3>Гигиена и пародонт</h3><p>AirFlow, Guided Biofilm Therapy, лечение дёсен. Основа любой красивой работы.</p><span class="more">от 9 500 ₽</span></article>
+          <article class="service"><span class="service-num">06</span><h3>Хирургия без драмы</h3><p>Удаление, костная пластика, синус-лифтинг. Седация и детальный разбор после операции.</p><span class="more">по плану лечения</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <div class="container split">
+        <img src="img/tech-room.jpg" alt="Цифровой кабинет стоматологии Марина" />
+        <div>
+          <p class="eyebrow" style="color:var(--gold)">Философия</p>
+          <h2 style="font-family:var(--font-serif);font-size:clamp(36px,5vw,58px);font-weight:500;line-height:1;margin:12px 0 16px;">Сначала точность.<br>Потом красота.</h2>
+          <p style="color:var(--muted);line-height:1.7;">Мы не продаём «голливудскую улыбку за визит». Сначала разбираем функцию, дыхание, суставы и привычки. Эстетика, которая ломается через год, нам не нужна.</p>
+          <div class="chips">
+            <span class="chip">КЛКТ в клинике</span>
+            <span class="chip">CAD/CAM</span>
+            <span class="chip">Микроскоп</span>
+            <span class="chip">Седация</span>
+          </div>
+          <ul class="checklist">
+            <li><span class="dot"></span>Один лечащий врач ведёт случай от консультации до контроля.</li>
+            <li><span class="dot"></span>План лечения — в письменном виде, с этапами и вилками стоимости.</li>
+            <li><span class="dot"></span>Если можно не сверлить — не сверлим. Если можно подождать — объясняем зачем.</li>
+          </ul>
+          <a class="btn" href="#book">Обсудить мой случай</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" style="padding-top:40px;">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" style="color:var(--gold)">Команда</p>
+          <h2>Врачи, которых не стыдно показать крупным планом</h2>
+          <p>Не стоковые улыбки. Реальные специалисты клиники, которые принимают в клинике Марина.</p>
+        </div>
+        <div class="team-grid">
+          <article class="card">
+            <img src="img/doctor-anna.jpg" alt="Анна Волкова" />
+            <div class="card-body"><h3>Анна Волкова</h3><div class="role">Главный врач · ортопед</div><p>Эстетическая реабилитация и сложные протезные работы. Стажировки в Италии и Германии.</p></div>
+          </article>
+          <article class="card">
+            <img src="img/doctor-mark.jpg" alt="Марк Соловьёв" />
+            <div class="card-body"><h3>Марк Соловьёв</h3><div class="role">Хирург-имплантолог</div><p>Навигационная имплантация и костная пластика. Спокойный голос в самых нервных случаях.</p></div>
+          </article>
+          <article class="card">
+            <img src="img/doctor-elena.jpg" alt="Елена Крылова" />
+            <div class="card-body"><h3>Елена Крылова</h3><div class="role">Ортодонт</div><p>Элайнеры и взрослый прикус. Умеет объяснять сложное так, что хочется начать лечение.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="smile-band">
+          <img src="img/smile.jpg" alt="Естественная улыбка" />
+          <div>
+            <p class="eyebrow">Результат</p>
+            <h2>Улыбка, которая<br>выглядит как ваша</h2>
+            <p>Никакого «фарфорового забора». Цвет, форма и прозрачность подбираются под кожу, губы и характер.</p>
+            <a class="btn btn-gold" href="#book">Хочу такую спокойную улыбку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" style="color:var(--gold)">Отзывы</p>
+          <h2>Не «спасибо большое», а конкретные истории</h2>
+        </div>
+        <div class="reviews">
+          <article class="review"><div class="stars">★★★★★</div><p>«Боялась имплантации десять лет. У Марка за один визит собрали план, на втором — поставили. Не геройство, просто очень собранная команда.»</p><div class="who"><b>Ирина К.</b><span>имплантация · 2025</span></div></article>
+          <article class="review"><div class="stars">★★★★★</div><p>«Виниры на четыре зуба. Анна трижды показывала цифровой макет, пока форма не стала «моей». Сейчас забываю, что это работа.»</p><div class="who"><b>Дарья М.</b><span>эстетика · 2026</span></div></article>
+          <article class="review"><div class="stars">★★★★★</div><p>«Взрослые элайнеры без ощущения, что со мной разговаривают как с ребёнком. Сроки совпали с тем, что написали в плане.»</p><div class="who"><b>Алексей П.</b><span>ортодонтия · 2025</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" style="color:var(--gold)">FAQ</p>
+          <h2>Коротко о том, что обычно спрашивают до звонка</h2>
+        </div>
+        <div class="faq">
+          <details open><summary>Консультация правда бесплатная?</summary><p>Первичный осмотр и разговор с врачом — да. КЛКТ, сканирование и развёрнутый письменный план оплачиваются отдельно, если вы решаете их делать в этот же день. Никаких навязанных «пакетов».</p></details>
+          <details><summary>Больно ли будет?</summary><p>Современная анестезия + возможность седации. Большинство пациентов говорят не «не больно», а «странно, что уже всё».</p></details>
+          <details><summary>Можно ли прийти со снимками из другой клиники?</summary><p>Да. Пришлите их администратору заранее — врач посмотрит до визита и не будет повторять исследования без нужды.</p></details>
+          <details><summary>Работаете с рассрочкой?</summary><p>Да, беспроцентная рассрочка на ортопедию, имплантацию и ортодонтию. Условия фиксируем в договоре до начала работы.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="container">
+        <div class="booking">
+          <div class="booking-copy">
+            <p class="eyebrow">Запись</p>
+            <h2>Приходите без паники. Остальное — наша работа.</h2>
+            <p>Оставьте контакты. Администратор перезвонит, подберёт врача и время. Если случай срочный — напишите об этом в комментарии.</p>
+            <div class="contact-list">
+              <div>Москва, Большой Козихинский пер., 10</div>
+              <div>+7 495 123-45-67</div>
+              <div>hello@marina.clinic</div>
+              <div>Пн–Сб 09:00–21:00 · Вс по записи</div>
+            </div>
+          </div>
+          <form class="form" id="booking-form">
+            <div><label for="name">Имя</label><input id="name" name="name" required placeholder="Как к вам обращаться" /></div>
+            <div><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" required placeholder="+7" /></div>
+            <div><label for="service">Направление</label>
+              <select id="service" name="service">
+                <option>Консультация / диагностика</option>
+                <option>Эстетика и виниры</option>
+                <option>Имплантация</option>
+                <option>Ортодонтия</option>
+                <option>Гигиена</option>
+                <option>Другое</option>
+              </select>
+            </div>
+            <div><label for="msg">Комментарий</label><textarea id="msg" name="msg" placeholder="Коротко о задаче или удобном времени"></textarea></div>
+            <button class="btn btn-gold" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <a class="logo" href="#top">МАРИНА</a>
+        <div class="footer-nav">
+          <a href="#services">Услуги</a>
+          <a href="#team">Врачи</a>
+          <a href="#book">Запись</a>
+          <a href="tel:+74951234567">Позвонить</a>
+        </div>
+      </div>
+      <div class="copy">
+        <span>© 2026 Стоматология Марина. Демонстрационный сайт.</span>
+        <span>Лицензия на медицинскую деятельность · ООО «Марина»</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
